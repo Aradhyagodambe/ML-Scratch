@@ -20,7 +20,7 @@ To effectively read, use, or contribute to this code, you will need:
 
 **Supervised Learning**
 - [x] Linear Regression (Ordinary Least Squares & Gradient Descent)
-- [x] Logistic Regression
+- [ ] Logistic Regression
 - [x] K-Nearest Neighbors (KNN)
 - [ ] Naive Bayes
 - [ ] Support Vector Machines (SVM)
