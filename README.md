@@ -23,7 +23,7 @@ To effectively read, use, or contribute to this code, you will need:
 - [x] Logistic Regression
 - [x] K-Nearest Neighbors (KNN)
 - [x] Naive Bayes
-- [ ] Support Vector Machines (SVM)
+- [x] Support Vector Machines (SVM)
 - [ ] Decision Trees
 - [ ] Random Forest
 
