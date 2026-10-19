@@ -24,7 +24,7 @@ To effectively read, use, or contribute to this code, you will need:
 - [x] K-Nearest Neighbors (KNN)
 - [x] Naive Bayes
 - [x] Support Vector Machines (SVM)
-- [ ] Decision Trees
+- [x] Decision Trees
 - [ ] Random Forest
 
 **Unsupervised Learning**
