@@ -18,15 +18,42 @@ To effectively read, use, or contribute to this code, you will need:
 
 ## Algorithms Planned and Implemented
 
-**Supervised Learning**
-- [x] Linear Regression (Ordinary Least Squares & Gradient Descent)
-- [x] Logistic Regression
-- [x] K-Nearest Neighbors (KNN)
-- [x] Naive Bayes
-- [x] Support Vector Machines (SVM)
-- [x] Decision Trees
-- [ ] Random Forest
+**Legend for tags `[Tier / Popularity]`**
+*   **Tier:** **B** (Basic), **I** (Intermediate), **A** (Advanced)
+*   **Popularity/Industry Usage:** **H** (High), **M** (Medium), **L** (Low/Niche)
 
-**Unsupervised Learning**
-- [ ] K-Means Clustering
-- [ ] Principal Component Analysis (PCA)
+### Supervised Learning
+- [x] Linear Regression (OLS & Gradient Descent) `[B / H]`
+- [x] Logistic Regression `[B / H]`
+- [x] K-Nearest Neighbors (KNN) `[B / H]`
+- [x] Naive Bayes `[B / H]`
+- [x] Support Vector Machines (SVM) `[I / H]`
+- [x] Decision Trees `[I / H]`
+- [ ] Perceptron (Classical Linear Classifier) `[B / M]`
+- [ ] Ridge, Lasso, and Elastic Net Regression `[I / H]`
+- [ ] Linear & Quadratic Discriminant Analysis (LDA & QDA) `[I / M]`
+- [ ] Gaussian Processes (GP) `[A / L]`
+
+### Ensemble Learning
+- [ ] Random Forest `[A / H]`
+- [ ] AdaBoost & Gradient Boosting `[A / H]`
+- [ ] XGBoost (Extreme Gradient Boosting) `[A / H]`
+
+### Unsupervised Learning
+- [ ] K-Means Clustering `[B / H]`
+- [ ] Principal Component Analysis (PCA) `[B / H]`
+- [ ] DBSCAN `[I / H]`
+- [ ] Gaussian Mixture Models (GMM) `[A / M]`
+- [ ] Hierarchical Agglomerative Clustering `[A / M]`
+- [ ] Independent Component Analysis (ICA) `[A / L]`
+- [ ] Truncated SVD / Matrix Factorization `[A / H]`
+- [ ] t-SNE (t-Distributed Stochastic Neighbor Embedding) `[A / H]`
+
+### Anomaly Detection
+- [ ] Isolation Forest `[A / M]`
+
+### Association Rule Learning
+- [ ] Apriori Algorithm `[I / M]`
+
+### Sequence Prediction
+- [ ] Hidden Markov Models (HMM) `[A / L]`
