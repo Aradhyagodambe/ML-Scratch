@@ -1,12 +1,11 @@
-import matplotlib.pyplot as plt
 import numpy as np
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
 from LogisticRegression import LogisticRegression
 
-bc = datasets.load_breast_cancer()
-X, y = bc.data, bc.target
+X, y = datasets.load_breast_cancer(return_X_y=True)
+
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=1234
@@ -18,7 +17,7 @@ def accuracy(y_true, y_pred):
     return accuracy
 
 
-regressor = LogisticRegression(lr = 0.01)
+regressor = LogisticRegression(lr=0.01)
 regressor.fit(X_train, y_train)
 predictions = regressor.predict(X_test)
 
