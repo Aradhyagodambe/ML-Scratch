@@ -35,7 +35,7 @@ To effectively read, use, or contribute to this code, you will need:
 - [ ] Gaussian Processes (GP) `[A / L]`
 
 ### Ensemble Learning
-- [ ] Random Forest `[A / H]`
+- [x] Random Forest `[A / H]`
 - [ ] AdaBoost & Gradient Boosting `[A / H]`
 - [ ] XGBoost (Extreme Gradient Boosting) `[A / H]`
 
