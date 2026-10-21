@@ -29,7 +29,7 @@ To effectively read, use, or contribute to this code, you will need:
 - [x] Naive Bayes `[B / H]`
 - [x] Support Vector Machines (SVM) `[I / H]`
 - [x] Decision Trees `[I / H]`
-- [ ] Perceptron (Classical Linear Classifier) `[B / M]`
+- [x] Perceptron (Classical Linear Classifier) `[B / M]`
 - [ ] Ridge, Lasso, and Elastic Net Regression `[I / H]`
 - [ ] Linear & Quadratic Discriminant Analysis (LDA & QDA) `[I / M]`
 - [ ] Gaussian Processes (GP) `[A / L]`
