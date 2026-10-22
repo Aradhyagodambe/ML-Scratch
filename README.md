@@ -30,13 +30,17 @@ To effectively read, use, or contribute to this code, you will need:
 - [x] Support Vector Machines (SVM) `[I / H]`
 - [x] Decision Trees `[I / H]`
 - [x] Perceptron (Classical Linear Classifier) `[B / M]`
-- [ ] Ridge, Lasso, and Elastic Net Regression `[I / H]`
-- [ ] Linear & Quadratic Discriminant Analysis (LDA & QDA) `[I / M]`
+- [ ] Ridge Regression (L2 Regularization - Closed-form & GD) `[B / H]`
+- [ ] Lasso Regression (L1 Regularization - Coordinate Descent & Soft-Thresholding) `[I / H]`
+- [ ] Elastic Net Regression (Combined L1/L2 via Coordinate Descent) `[I / M]`
+- [ ] Linear Discriminant Analysis (LDA) `[I / M]`
+- [ ] Quadratic Discriminant Analysis (QDA) `[I / M]`
 - [ ] Gaussian Processes (GP) `[A / L]`
 
 ### Ensemble Learning
 - [x] Random Forest `[A / H]`
-- [ ] AdaBoost & Gradient Boosting `[A / H]`
+- [ ] AdaBoost `[A / H]`
+- [ ] Gradient Boosting `[A / H]`
 - [ ] XGBoost (Extreme Gradient Boosting) `[A / H]`
 
 ### Unsupervised Learning
