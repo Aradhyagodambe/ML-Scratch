@@ -45,7 +45,7 @@ To effectively read, use, or contribute to this code, you will need:
 
 ### Unsupervised Learning
 - [ ] K-Means Clustering `[B / H]`
-- [ ] Principal Component Analysis (PCA) `[B / H]`
+- [x] Principal Component Analysis (PCA) `[B / H]`
 - [ ] DBSCAN `[I / H]`
 - [ ] Gaussian Mixture Models (GMM) `[A / M]`
 - [ ] Hierarchical Agglomerative Clustering `[A / M]`
