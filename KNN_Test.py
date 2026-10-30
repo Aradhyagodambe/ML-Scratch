@@ -10,9 +10,14 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=1234
 )
 
-clf = KNN(k=3)
-clf.fit(X_train, y_train)
-predictions = clf.predict(X_test)
+X_train_arr = np.asarray(X_train, dtype=np.float64)
+X_test_arr = np.asarray(X_test, dtype=np.float64)
+y_train_list = [int(label) for label in y_train]
+
+clf = KNN[int](k=3)
+clf.fit(X_train_arr, y_train_list)
+
+predictions = clf.predict(X_test_arr)
 
 acc = np.sum(predictions == y_test) / len(y_test)
 print(acc)
