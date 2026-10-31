@@ -1,8 +1,7 @@
 import numpy as np
+from KNN_Scratch import KNN
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
-
-from KNN_Scratch import KNN
 
 X, y = datasets.load_iris(return_X_y=True)
 
