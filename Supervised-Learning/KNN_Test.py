@@ -11,7 +11,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 X_train_arr = np.asarray(X_train, dtype=np.float64)
 X_test_arr = np.asarray(X_test, dtype=np.float64)
-y_train_list = [int(label) for label in y_train]
+y_train_list = np.asarray(y_train, dtype=np.int_).tolist()
 
 clf = KNN[int](k=3)
 clf.fit(X_train_arr, y_train_list)
