@@ -38,9 +38,9 @@ class DecisionTree:
     ):
         self.min_samples_split = min_samples_split
         self.max_depth = max_depth
-        self.n_feats = n_feats  
+        self.n_feats = n_feats
         self.root: Node | None = None
-        self._n_feats: int = 0 
+        self._n_feats: int = 0
 
     def fit(self, X: npt.NDArray[np.float64], y: npt.NDArray[np.int_]) -> None:
         n_cols = X.shape[1]
@@ -80,7 +80,7 @@ class DecisionTree:
         X: npt.NDArray[np.float64],
         y: npt.NDArray[np.int_],
         feat_idxs: npt.NDArray[np.int_],
-    ) -> tuple[int, float] | None:  
+    ) -> tuple[int, float] | None:
         best_gain = 0.0
         best: tuple[int, float] | None = None
 
@@ -103,7 +103,7 @@ class DecisionTree:
         left_idxs, right_idxs = self._split(X_column, split_thresh)
 
         if len(left_idxs) == 0 or len(right_idxs) == 0:
-            return 0.0  
+            return 0.0
 
         n = len(y)
         child_entropy = (len(left_idxs) / n) * entropy(y[left_idxs]) + (
@@ -127,9 +127,9 @@ class DecisionTree:
     def _traverse_tree(self, x: npt.NDArray[np.float64], node: Node) -> int:
         if isinstance(node, Leaf):
             return node.value
-            
+
         child = node.left if x[node.feature] <= node.threshold else node.right
         return self._traverse_tree(x, child)
 
     def _most_common_label(self, y: npt.NDArray[np.int_]) -> int:
-        return int(Counter(y).most_common(1)[0][0])  
+        return int(Counter(y).most_common(1)[0][0])
