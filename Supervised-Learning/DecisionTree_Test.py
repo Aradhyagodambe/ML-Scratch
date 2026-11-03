@@ -1,11 +1,11 @@
 import numpy as np
+import numpy.typing as npt
+from DecisionTree import DecisionTree
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
-from DecisionTree import DecisionTree
 
-
-def accuracy(y_true, y_pred):
+def accuracy(y_true: npt.NDArray[np.int_], y_pred: npt.NDArray[np.int_]) -> float:
     accuracy = np.sum(y_true == y_pred) / len(y_true)
     return accuracy
 
@@ -16,9 +16,14 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=1234
 )
 
-clf = DecisionTree(max_depth=10)
-clf.fit(X_train, y_train)
+X_train_arr: npt.NDArray[np.float64] = np.asanyarray(X_train)
+X_test_arr: npt.NDArray[np.float64] = np.asanyarray(X_test)
+y_train_arr: npt.NDArray[np.int_] = np.asanyarray(y_train)
+y_test_arr: npt.NDArray[np.int_] = np.asanyarray(y_test)
 
-y_pred = clf.predict(X_test)
-acc = accuracy(y_test, y_pred)
+clf = DecisionTree(max_depth=10)
+clf.fit(X_train_arr, y_train_arr)
+
+y_pred = clf.predict(X_test_arr)
+acc = accuracy(y_test_arr, y_pred)
 print("accuracy:", acc)
