@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
+from linear_discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn import datasets
-
-from LinearDiscriminantAnalysis import LinearDiscriminantAnalysis
 
 X, y = datasets.load_iris(return_X_y=True)
 

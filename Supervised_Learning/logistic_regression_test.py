@@ -1,6 +1,6 @@
 import numpy as np
 import numpy.typing as npt
-from LogisticRegression import LogisticRegression
+from logistic_regression import LogisticRegression
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 

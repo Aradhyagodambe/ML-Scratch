@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import numpy.typing as npt
+from linear_regression import LinearRegression
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
@@ -20,14 +21,13 @@ X_test_arr: npt.NDArray[np.float64] = np.asarray(X_test)
 y_train_arr: npt.NDArray[np.float64] = np.asarray(y_train)
 y_test_arr: npt.NDArray[np.float64] = np.asarray(y_test)
 
-from LinearRegression_Scratch import LinearRegression
 
 regressor = LinearRegression()
 regressor.fit(X_train_arr, y_train_arr)
 predicted: npt.NDArray[np.float64] = regressor.predict(X_test_arr)
 
 
-def mse(y_true: npt.NDArray, y_predicted:npt.NDArray):
+def mse(y_true: npt.NDArray, y_predicted: npt.NDArray):
     return np.mean((y_true - y_predicted) ** 2)
 
 

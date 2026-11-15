@@ -1,6 +1,6 @@
 import numpy as np
 import numpy.typing as npt
-from DecisionTree import DecisionTree
+from decision_tree import DecisionTree
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 

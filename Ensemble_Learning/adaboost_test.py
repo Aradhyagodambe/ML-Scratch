@@ -1,8 +1,7 @@
 import numpy as np
+from adaboost import AdaBoost
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
-
-from Ensemble_Learning.RandomForest import RandomForest
 
 
 def accuracy(y_true, y_pred):
@@ -11,16 +10,15 @@ def accuracy(y_true, y_pred):
 
 
 X, y = datasets.load_breast_cancer(return_X_y=True)
-
+y[y == 0] = -1
 
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=1234
+    X, y, train_size=0.2, random_state=5
 )
 
-clf = RandomForest(n_trees=3)
+clf = AdaBoost(n_clf=5)
 clf.fit(X_train, y_train)
-
 y_pred = clf.predict(X_test)
-acc = accuracy(y_test, y_pred)
 
-print("Accuracy:", acc)
+acc = accuracy(y_test, y_pred)
+print("Accuraacy:", acc)

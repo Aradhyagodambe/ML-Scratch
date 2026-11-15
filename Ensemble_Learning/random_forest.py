@@ -2,7 +2,7 @@ from collections import Counter
 
 import numpy as np
 
-from Supervised_Learning.DecisionTree import DecisionTree
+from Supervised_Learning.decision_tree import DecisionTree
 
 
 def bootstrap_(X, y):

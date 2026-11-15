@@ -1,9 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from perceptron import Perceptron
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
-
-from Perceptron import Perceptron
 
 
 def accuracy(y_true, y_pred):
